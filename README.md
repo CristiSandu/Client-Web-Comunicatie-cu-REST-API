@@ -11,6 +11,7 @@ la server si functia parse pe care am folosit-o la transformarea stringului pe c
 Am foloit-o din prisma faptului ca este usor de folosit, astfel usurandu-mi munca de formare a mesajululi de transmis la server pentru logare si creare carte noua si parsarea JWT primit de la server.
 
 La implementarea clientului am definit initial adresele url pe care trebuie sa le trimita pentru fiecare comanada in parte. Am mai definit 2 stringuri in care salvez cookie-ul primit la logarea in server si JWT dupa comanda de enter_library. Pentru datele de logare, datele aferente noii carti si pentru JWT primite de la server am folosit niste variabile de tip json.
+
 Dupa intr-o bucla while cat timp nu dau break, citesc de la tastatura cu fgets comenziile si daca se potrivesc cu comenziile comenziile acceptat afisate la pornirea programului merg pe ramura aferenta fiecarei comenzi.
 Pe toate ramurile initial deschid conexiunea si peurma formez cererea catre server aferenta fiecarei comenzi si astept un raspuns pe care il afisez la stdout. La aceste opereati folosesc functiile din laborator (din helpers.cpp).
 Functiile care formeaza mesajul de trimis le-am modificat pentru a putea primi toate datele neceare fiecarei cereri.  
@@ -23,6 +24,7 @@ Pentru scoaterea JWT procesul scot stringul de pe ultima pozitie la care concate
 Pentru a evita erorile am pus conditie de logare si de existare a JWT sau a cookie-ului. Daca acesta nu exista pentru comenziile la care ni se cere exista o comparatie care afiseaza un mesaj corespunzator care atentioneaza user-ul. Pe langa astea am mai pus o verificarea la adaugare carte daca pentru campul aferent nr pagini nu introduce un numar programul nu trece mai departe. Pentru verificare am folosit functia strtol intr-un while (1).
 La comanda de logout restaurez string-urile pentru JWT si cookies la valoarea initiala dupa logare astfel daca user-ul nu mai e logat nu va putea da alte comenzi inafara de register,login sau exit, pentru celelalte primind un mesaj corespunzator.
 Prin tastarea comenzii exit se face un break care iese din loop.
+
 La final se elibereaza memoria aferenta mesajului la server si raspunsului de la server.
 
 ### [Cerinte](https://github.com/cristysandu/Client-Web-Comunicatie-cu-REST-API/blob/master/Tema_3_enunt.pdf)
