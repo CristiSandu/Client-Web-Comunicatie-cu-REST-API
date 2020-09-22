@@ -6,7 +6,7 @@ In fiserul **client.cpp** am implementat clientul propriuzis celelate fisiere av
 
 In principiu secheletul este similar cu cel prezent in laboratorul 10, cu exceptia modificarilor aduse functiilor compute_get_request, compute_post_request pentru a putea compune noile tipuri de mesaje aferente cerintelor.
 
-Ca si json am folosit nlohmann prezent in indrumar pentru c++. Din acest json am folosit functiile .dump pentru a transforma json-ul intr-un string care urmeaza sa fie trimis 
+Ca si json am folosit nlohmann prezent in indrumar pentru C++. Din acest json am folosit functiile .dump pentru a transforma json-ul intr-un string care urmeaza sa fie trimis 
 la server si functia parse pe care am folosit-o la transformarea stringului pe care l-am scos din raspunsul pentru comanda enter_library in care se afla JWT. 
 Am foloit-o din prisma faptului ca este usor de folosit, astfel usurandu-mi munca de formare a mesajululi de transmis la server pentru logare si creare carte noua si parsarea JWT primit de la server.
 
