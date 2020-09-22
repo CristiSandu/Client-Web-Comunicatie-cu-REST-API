@@ -1,6 +1,7 @@
 # Client Web. Comunicatie cu REST API.
 
-Proiectul contine ca si fisiere: buffer.cpp, buffer.h, requests.cpp, requests.h, client.cpp, 	helpers.cpp,  helpers.h
+Proiectul contine ca si fisiere: buffer.cpp, buffer.h, requests.cpp, requests.h, client.cpp, 	helpers.cpp,  helpers.h .
+
 In fiserul **client.cpp** am implementat clientul propriuzis celelate fisiere avand rol ajutator. 
 
 In principiu secheletul este similar cu cel prezent in laboratorul 10, cu exceptia modificarilor aduse functiilor compute_get_request, compute_post_request pentru a putea compune noile tipuri de mesaje aferente cerintelor.
