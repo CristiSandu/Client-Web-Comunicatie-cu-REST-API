@@ -1,7 +1,7 @@
-Tema 3 PC - Client Web. Comunicatie cu REST API.
+# Client Web. Comunicatie cu REST API.
 
 Proiectul contine ca si fisiere: buffer.cpp, buffer.h, requests.cpp, requests.h, client.cpp, 	helpers.cpp,  helpers.h
-In fiserul client.cpp am implementat clientrul propriuzit celelate fisiere avand rol ajutator. 
+In fiserul **client.cpp** am implementat clientul propriuzis celelate fisiere avand rol ajutator. 
 
 In principiu secheletul este similar cu cel prezent in laboratorul 10, cu exceptia modificarilor aduse functiilor compute_get_request, compute_post_request pentru a putea compune noile tipuri de mesaje aferente cerintelor.
 
@@ -23,3 +23,5 @@ Pentru a evita erorile am pus conditie de logare si de existare a JWT sau a cook
 La comanda de logout restaurez string-urile pentru JWT si cookies la valoarea initiala dupa logare astfel daca user-ul nu mai e logat nu va putea da alte comenzi inafara de register,login sau exit, pentru celelalte primind un mesaj corespunzator.
 Prin tastarea comenzii exit se face un break care iese din loop.
 La final se elibereaza memoria aferenta mesajului la server si raspunsului de la server.
+
+### [Cerinte](https://github.com/cristysandu/Client-Web-Comunicatie-cu-REST-API/blob/master/Tema_3_enunt.pdf)
